@@ -2,10 +2,10 @@
 # Description:
 A Learning Management System (LMS) serves as a comprehensive platform catering to both students and faculty members within educational institutions. Designed to facilitate seamless interaction and learning experiences, it offers various features such as course materials dissemination,grading, and communication tools. Additionally, it serves as a hub for organizing events, particularly beneficial for faculty-led activities within colleges. Through the LMS, educators can efficiently manage event logistics, promote participation, and ensure effective communication with attendees. This centralized system enhances collaboration, engagement, and overall academic performance while streamlining administrative processes for faculty members.
 # Tech Stack Used:
-HTML - For building the content in websites
-CSS - For styling the website
-Java Script - For making and adding up tha actions everywhre
-Node JS - For running the server components in the Node Js Framework
+HTML - For building the content in websites,
+CSS - For styling the website,
+Java Script - For making and adding up tha actions everywhre,
+Node JS - For running the server components in the Node Js Framework,
 MongoDb - It's a database to store up the entered details
 # How to run in Localhost:
 Go to server.js file and run the server.
