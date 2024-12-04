@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Homepage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn-login,
+        .btn-signup {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-signup {
+            background-color: #28A745;
+        }
+
+        button {
+            height: 37px;
+            margin: 5px;
+            background-color: orangered;
+            color: whitesmoke;
+            width: 95px;
+            border-radius: 7px;
+
+        }
+
+        .x h3 {
+            margin-left: 15px;
+            color: bisque;
+        }
+
+        .r h3 {
+            margin-left: 85px;
+            color: bisque;
+
+        }
+
+        footer {
+            background-color: #333;
+        }
+
+
+
+
+
+
+        .but a {
+            color: white;
+            text-decoration: none;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            /* Adjust this width to fit your images */
+            height: 600px;
+        }
+
+
+        /* Carousel Slide */
+        .carousel-slide {
+            min-width: 100%;
+            transition: transform 0.5s;
+        }
+
+        /* Carousel Image */
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Navigation Buttons */
+        .carousel-prev,
+        .carousel-next {
+            cursor: pointer;
+        }
+
+        .row h1 {
+            text-align: center;
+            color: orangered;
+            font-style: oblique;
+        }
+
+        .y {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: orangered;
+
+        }
+
+        .z {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+        }
+
+        .b {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .ra h3 {
+            color: white;
+            margin-left: 20px;
+        }
+
+        .p {
+            color: whitesmoke;
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-bottom: 20px;
+            }
+
+            .y {
+                flex-direction: column;
+            }
+
+            .z {
+                flex-direction: column;
+            }
+        }
+        marquee {
+            background-color: #333;
+            color: whitesmoke;
+        }
+        .s p {
+            font-weight: bold;
+            font-style: oblique;
+        }
+        .map {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        .map h3 {
+            margin-left: 18%;
+        }
+        iframe{
+            margin-left:13% ;
+        }
+        .web {
+            width: 120rem;
+            height: 30rem;
+            background-color: orangered;
+            border-top-right-radius: 150%;
+        }
+        p {
+            margin-top: 0px;
+        }
+        .Features {
+            width: 120rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .student {
+            background-color: orangered
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-app-indicator" viewBox="0 0 16 16">
+                <path
+                    d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            </svg>
+            <h1 class="logo">Learning Management System</h1>
+            <div class="but">
+                <button><a href="/login">Student</a></button>
+                <button><a href="flogin">Faculty</a></button>
+                <button><a href="/login">Parent Login</a></button>
+            </div>
+
+        </div>
+    </header>
+    <div class="Features">
+        <h2>Features</h2>
+        <div class="student">
+            <ol>
+                <p>Student Login</p>
+                <p>Faculty Login</p>
+                <p>Parent Login</p>
+                
+            </ol>
+        </div>
+        
+
+       
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

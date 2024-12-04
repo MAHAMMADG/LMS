@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Grades</h1>
+
+        <table id="student-table">
+            <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        fetch('/sm')
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    data.data1.forEach(element => {
+                        var tr = document.createElement('tr');
+                        var th1 = document.createElement('td');
+                        th1.innerHTML = element.Subject;
+                        tr.appendChild(th1);
+                        var th2 = document.createElement('td');
+                        th2.innerHTML = element.marks;
+                        tr.appendChild(th2);
+                        document.getElementById('student-table').appendChild(tr);
+                    });
+                } else {
+                    alert('Failed to fetch marks');
+                }
+            });
+    </script>
+</body>
+
+</html>

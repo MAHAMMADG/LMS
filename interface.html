@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Management System.</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 15px;
+      background-color: antiquewhite;
+      font-weight: bolder;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    span {
+      color: orangered;
+    }
+
+    .main {
+      margin-left: 15px;
+    }
+
+    .Log {
+      height: 35px;
+      margin-right: 15px;
+      width: 70px;
+      background-color: blueviolet;
+      color: whitesmoke;
+      border: none;
+      font-weight: bolder;
+      border-radius: 5px;
+    }
+    .Log a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      padding: 0 8%;
+    }
+
+    .container h1 {
+      text-align: center;
+      color: orangered;
+      padding-top: 50px;
+      margin-bottom: 60px;
+      font-size: bold;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .x {
+      text-align: center;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+    .x .view {
+      width: 85px;
+      border: none;
+      height: 30px;
+      background-color: whitesmoke;
+      font-size: 15px;
+      font-weight: bolder;
+    }
+
+    .container footer {
+      height: 200px;
+      width: 100%;
+      background-color: antiquewhite;
+      margin-top: 100px;
+    }
+    
+    .con {
+      padding: 10px;
+      text-align: center;
+      padding-top: 25px;
+    }
+
+    .con a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bolder;
+      color: blueviolet;
+    }
+    .x button {
+      height: 30px;
+      width:75px;
+      margin-top: 5px;
+      border: none;
+    }
+    .x a {
+      color: black;
+      text-decoration: none;
+      font-style: italic;
+      font-weight: bolder;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h1 class="main">Student & Parent 
+    <span>Login</span></h1>
+    <button class="Log"><a href="/logout">Log out</a></button>
+  </div>
+
+  <div class="container">
+    <h1>Quick Links</h1>
+    <div class="row">
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <path d="M7 37c0-4.97 4.03-8 9-8h16c4.97 0 9 3.03 9 8v3a1 1 0 01-1 1H8a1 1 0 01-1-1v-3z" stroke="#4E5969"
+            stroke-width="4" />
+          <circle cx="24" cy="15" r="8" stroke="#4E5969" stroke-width="4" />
+        </svg>
+        <h3>Student Details</h3>
+        <p>Student can able to view<br>their personal details.</p>
+        <button><a class="view" href="/sdisplay">View</a></button>
+      </div>
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M41.667 5C42.955 5 44 5.895 44 7v34c0 1.105-1.045 2-2.333 2H6.333C5.045 43 4 42.105 4 41V7c0-1.105 1.045-2 2.333-2h35.334zM14 32H8v7h6v-7zm26 0H18v7h22v-7zM14 20H8v8h6v-8zm26 0H18v8h22v-8zM14 9H8v7h6V9zm26 0H18v7h22V9z"
+            fill="#000000" />
+        </svg>
+        <h3>Class Timetable</h3>
+        <p>Check your respective<br>time table here.</p>
+        <button><a class="view" href="/tt">Check</a></button>
+      </div>
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M40 4a2 2 0 011.995 1.85L42 6v37a2 2 0 01-1.85 1.995L40 45H8a2 2 0 01-1.995-1.85L6 43V6a2 2 0 011.85-1.995L8 4h32zm-2 4H10v33h28V8zm-4 25a1 1 0 011 1v1.5a1 1 0 01-1 1H14a1 1 0 01-1-1V34a1 1 0 011-1h20zm0-7a1 1 0 011 1v1.5a1 1 0 01-1 1H14a1 1 0 01-1-1V27a1 1 0 011-1h20zM19.602 11c.576.117.576.117.916.598l4.398 9.998c.108.801.108.801-.513 1.32-.196.07-.196.07-.403.084h-1.514c-.57-.115-.57-.115-.91-.586l-.771-1.693H17.13l-.684 1.66c-.338.497-.338.497-.926.619h-1.52c-.776-.224-.776-.224-1-1.001.014-.207.014-.207.084-.403l4.398-9.998c.34-.48.34-.48.916-.598h1.203zm-.598 4.693l-.894 2.383h1.788l-.894-2.383z"
+            fill="#000000" />
+        </svg>
+        <h3>Grades</h3>
+        <p>Check youre respective<br>grades here.</p>
+       <button><a class="view" href="/smm">Check</a></button> 
+      </div>
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M44 41a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2a1 1 0 011-1h40zM9 39a2 2 0 01-2-2V21a2 2 0 012-2h8v-6a2 2 0 012-2h8V5a2 2 0 012-2h10a2 2 0 012 2v32a2 2 0 01-2 2H9zm8-16h-6v12h6V23zm10-8h-6v20h6V15zm10-8h-6v28h6V7z"
+            fill="#000000" />
+        </svg>
+        <h3>Events</h3>
+        <p>Register here to participate<br>in our intrested event. </p>
+        <button><a class="view" href="/events">Register</button>
+      </div>
+      
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M39 3a2 2 0 012 2l-.001 11.999h-4L37 7H9v36h10v4H7a2 2 0 01-2-2V5a2 2 0 012-2h32zm2.515 17.698l4.242 4.243c.781.781.538 2.29-.543 3.372L28.897 44.458c-.522.521-1.172.871-1.807.971l-5.039.796c-1.31.207-2.2-.683-1.993-1.993l.796-5.039c.1-.634.45-1.285.972-1.806l16.317-16.145c1.081-1.081 2.59-1.325 3.372-.544zm-1.312 4.355L24.29 40.58l-.396 1.811 1.81-.397 15.913-15.526-1.414-1.414zM24 21a1 1 0 011 1v2a1 1 0 01-1 1H14a1 1 0 01-1-1v-2a1 1 0 011-1h10zm8-8a1 1 0 011 1v2a1 1 0 01-1 1H14a1 1 0 01-1-1v-2a1 1 0 011-1h18z"
+            fill="#000000" />
+        </svg>
+        <h3>Materials</h3>
+        <p>Collect materials here and <br> here after removing <br>also</p>
+        <button><a class="view" href="/materials">Collect</a></button>
+      </div>
+      <div class="x">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.05 26a1 1 0 01.993.883l.007.117v2a1 1 0 01-.884.993L24.05 30H16c-3.73 0-6.86 2.55-7.75 6a8.294 8.294 0 00-.24 1.588L8 38v2h16.05a1 1 0 01.993.883l.007.117v2a1 1 0 01-.884.993L24.05 44H6a2.003 2.003 0 01-1.994-1.85L4 42v-4c0-6.525 5.206-11.834 11.695-11.996L16 26h8.05zm14.657 3.636l5.657 5.657a1 1 0 010 1.414l-5.657 5.657a1 1 0 01-1.414 0l-1.414-1.414a1 1 0 010-1.415L39.414 36l-3.535-3.535a1 1 0 010-1.415l1.414-1.414a1 1 0 011.414 0zm-7.414 0a1 1 0 011.414 0l1.414 1.414a1 1 0 010 1.415L30.586 36l3.535 3.535a1 1 0 010 1.415l-1.414 1.414a1 1 0 01-1.414 0l-5.657-5.657a1 1 0 010-1.414l5.657-5.657zM21 3c5.52 0 10 4.477 10 10s-4.48 10-10 10-10-4.477-10-10S15.48 3 21 3zm0 4c-3.31 0-6 2.686-6 6s2.69 6 6 6 6-2.686 6-6-2.69-6-6-6z"
+            fill="#000000"/>
+        </svg>
+        <h3>Faculty Details</h3>
+        <p>Check faculty details here</p>
+        <button><a class="view" href="/ffdetails">Retrieve</a></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
